@@ -1,0 +1,33 @@
+{
+    "dataset": "kolkata_unified_dataset.csv",
+    "valid_records": 21310,
+    "training_rows": 17048,
+    "testing_rows": 4262,
+    "training_end_timestamp": "2025-04-03 18:45:00",
+    "test_start_timestamp": "2025-04-03 19:00:00",
+    "test_end_timestamp": "2025-04-25 23:30:00",
+    "target": "Measured soil moisture 15 minutes later (%)",
+    "unit": "volumetric water content percent",
+    "random_forest": {
+        "MAE": 0.11988434878431578,
+        "RMSE": 0.3478316604299455,
+        "R2": 0.9809015220896381
+    },
+    "linear_regression": {
+        "MAE": 0.02648367011930481,
+        "RMSE": 0.1378120511830747,
+        "R2": 0.9970019772067564
+    },
+    "baseline": {
+        "MAE": 0.027986860628812768,
+        "RMSE": 0.13791383268680196,
+        "R2": 0.9969975471740021
+    },
+    "best_ml_model": "Linear Regression",
+    "best_ml_model_metrics": {
+        "MAE": 0.02648367011930481,
+        "RMSE": 0.1378120511830747,
+        "R2": 0.9970019772067564
+    },
+    "warning": "The evaluation uses a chronological holdout from the same dataset and does not establish performance on new farms. The baseline may outperform both ML models. These results evaluate moisture prediction, not irrigation outcomes."
+}

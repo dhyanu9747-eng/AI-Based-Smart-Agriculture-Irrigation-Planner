@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+.DS_Store
+
+# Private user information
+users.json
+feedback.csv
+
+# Editor settings
+.vscode/
+
+# Temporary files
+*.log
+
+# Exclude optional generated files
+data/historical_soil_weather.csv
+dataset_source/
